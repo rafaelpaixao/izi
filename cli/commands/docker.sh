@@ -12,3 +12,4 @@ sudo add-apt-repository \
    stable"
 izi up
 izi get docker-ce
+izi get docker-compose
