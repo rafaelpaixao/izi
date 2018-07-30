@@ -1,0 +1,15 @@
+Fix emoji for thunderbird.
+
+Sorry to bump this thread, but something that worked for me was creating a "fonts" subfolder in Thunderbirds' own folder and placing EmojiOneMozilla.ttf in that folder.
+
+First, download the font itself304.
+
+Second, create a "fonts" folder (you need root access for that):
+
+sudo mkdir /usr/lib/thunderbird/fonts
+
+Finally, place the font file in that folder (mine was saved in ~/Downloads, yours may be in some other place, so change the next line, if needed):
+
+sudo cp ~/Downloads/EmojiOneMozilla.ttf /usr/lib/thunderbird/fonts/
+
+Restart Thunderbird and it's done. Hope it helps!
