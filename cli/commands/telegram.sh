@@ -2,4 +2,4 @@
 
 izi add ppa:atareao/telegram
 izi up
-izi get telegram
+izi get telegram-desktop
