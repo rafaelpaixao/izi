@@ -13,3 +13,4 @@ sudo add-apt-repository \
 izi up
 izi get docker-ce
 izi get docker-compose
+sudo usermod -aG docker $USER
