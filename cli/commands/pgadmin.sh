@@ -1,3 +1,5 @@
+# Install standalone version of PgAdmin 4
+
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
 izi get wget
 izi get ca-certificates

@@ -1,6 +1,9 @@
+# Installs Terminator
+
 izi add ppa:gnome-terminator
 izi up
 izi get terminator
+touch $HOME/.config/terminator/config
 echo '
 [global_config]
 [keybindings]
