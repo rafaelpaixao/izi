@@ -11,7 +11,7 @@ izi get libbz2-dev
 izi get libsqlite3-dev
 izi get libpq-dev
 izi get python3-pip
-pip install --upgrade pip
+pip3 install --upgrade pip
 curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 printf 'export PATH="$HOME/.pyenv/bin:$PATH"\neval "$(pyenv init -)"\neval "$(pyenv virtualenv-init -)"\n' >> ~/.bashrc
 source $HOME/.bashrc
