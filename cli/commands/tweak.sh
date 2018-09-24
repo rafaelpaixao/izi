@@ -15,4 +15,4 @@ izi get flat-remix
 
 git clone https://github.com/tliron/install-gnome-themes $HOME/.install-gnome-themes
 sudo $HOME/.install-gnome-themes/install-requirements-debian
-$/.install-gnome-themes/install-gnome-themes
+$HOME/.install-gnome-themes/install-gnome-themes
