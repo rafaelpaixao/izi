@@ -3,6 +3,7 @@
 izi add ppa:gnome-terminator
 izi up
 izi get terminator
+mkdir $HOME/.config/terminator
 touch $HOME/.config/terminator/config
 echo '
 [global_config]
