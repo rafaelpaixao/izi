@@ -7,4 +7,4 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 izi up
 izi get code
 echo "alias vs='code . --disable-gpu'" >> $HOME/.bashrc
-sudo echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf
+sudo bash -c "echo \"fs.inotify.max_user_watches=524288\" >> /etc/sysctl.conf"
