@@ -1,5 +1,7 @@
 # Installs Mendeley (reference manager for research)
 
-curl -O -J -L https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest > $HOME
-sudo dpkg -i $HOME/mendeleydesktop-latest
-rm $HOME/mendeleydesktop-latest
+izi get curl
+filename=$IZI_CLI/mendeley.deb
+curl -o $filename -L https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
+sudo dpkg -i $filename
+rm $filename
