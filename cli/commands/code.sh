@@ -1,10 +1,10 @@
 # Installs VS Code and create the alias vs for opening the current folder with the flag disable-gpu
 
 izi get curl
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-izi up
-izi get code
+filename=$IZI_CLI/vscode.deb
+curl -o $filename -L https://go.microsoft.com/fwlink/?LinkID=760868
+sudo dpkg -i $filename
+rm $filename
+
 echo "alias vs='code . --disable-gpu'" >> $HOME/.bashrc
 sudo bash -c "echo \"fs.inotify.max_user_watches=524288\" >> /etc/sysctl.conf"
