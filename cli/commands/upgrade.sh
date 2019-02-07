@@ -7,3 +7,4 @@ sudo apt -y upgrade
 sudo apt -y dist-upgrade
 sudo apt autoremove
 sudo apt clean
+sudo snap refresh
